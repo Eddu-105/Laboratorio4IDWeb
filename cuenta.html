@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>cuenta.html</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; }
+    table {
+      border-collapse: collapse;
+      margin: 1rem auto;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      padding: .5rem;
+      font-size: 1.1rem;
+      text-decoration: underline;
+    }
+    th, td {
+      border: 2px solid #333;
+      padding: .4rem .6rem;
+      text-align: center;
+      min-width: 110px;
+    }
+    th { background: #f3f3f3; }
+    tfoot td {
+      font-weight: bold;
+      background: #f9f9f9;
+    }
+    .col-prod { text-align: left; min-width: 160px; }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Boleta de Pago</caption>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio Unitario</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-prod">Producto 1</td>
+        <td>1</td>
+        <td>5</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td class="col-prod">Producto 2</td>
+        <td>3</td>
+        <td>2</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td class="col-prod">Producto 3</td>
+        <td>2</td>
+        <td>3.5</td>
+        <td>7</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total General</td>
+        <td>18</td>
+      </tr>
+    </tfoot>
+  </table>
